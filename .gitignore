@@ -1,0 +1,3 @@
+# les fichiers suivants sont  ignorés l'ors du commit
+node_modules
+.env
