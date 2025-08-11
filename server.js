@@ -70,8 +70,8 @@ app.use(errorHandler);
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connexion à MongoDB réussie');
-    app.listen(process.env.PORT, () => {
-      console.log(`Serveur démarré sur le port ${process.env.PORT}`);
+    app.listen(PORT, () => {
+      console.log(`Serveur démarré sur le port ${PORT}`);
     }); 
   })
   .catch(err => {
