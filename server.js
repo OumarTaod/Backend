@@ -7,6 +7,7 @@ const helmet = require('helmet');
 const cors = require('cors');
 const path = require('path');
 const multer = require('multer');
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
