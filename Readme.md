@@ -21,7 +21,7 @@ Cette API permet de gérer des notes (CRUD) via des endpoints RESTful.
 
 
 ### Créer une note
-**POST** `/notes`
+**POST** `/notes/ajouter`
 #### Body (JSON)
 ```json
 {
@@ -43,7 +43,7 @@ Cette API permet de gérer des notes (CRUD) via des endpoints RESTful.
 ```
 
 ### Récupérer toutes les notes
-**GET** `/notes`
+**GET** `/notes/afficher`
 #### Réponse
 ```json
 [
@@ -58,7 +58,7 @@ Cette API permet de gérer des notes (CRUD) via des endpoints RESTful.
 ```
 
 ### Récupérer une note par ID
-**GET** `/notes/:id`
+**GET** `/notes/afficher/:id`
 #### Réponse
 ```json
 {
@@ -71,7 +71,7 @@ Cette API permet de gérer des notes (CRUD) via des endpoints RESTful.
 ```
 
 ### Mettre à jour une note
-**PUT** `/notes/:id`
+**PUT** `/notes/modifier/:id`
 #### Body (JSON)
 ```json
 {
@@ -93,7 +93,7 @@ Cette API permet de gérer des notes (CRUD) via des endpoints RESTful.
 ```
 
 ### Supprimer une note
-**DELETE** `/notes/:id`
+**DELETE** `/notes/supprimer/:id`
 #### Réponse
 ```json
 {

@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const noteCtrl = require('../controllers/noteController');
 
-router.post('/', noteCtrl.creerNote);
-router.get('/', noteCtrl.getNotes);
-router.get('/:id', noteCtrl.getNote);
-router.put('/:id', noteCtrl.updateNote);
-router.delete('/:id', noteCtrl.deleteNote);
+router.post('/ajouter', noteCtrl.creerNote);
+router.get('/afficher', noteCtrl.getNotes);
+router.get('/afficher/:id', noteCtrl.getNote);
+router.put('/modifier/:id', noteCtrl.updateNote);
+router.delete('/supprimer/:id', noteCtrl.deleteNote);
 
 module.exports = router;
