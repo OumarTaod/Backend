@@ -56,7 +56,7 @@ app.use('/api/auth', authRoutes);
 
 // --- Routes protégées par authentification ---
 // Ici, toutes les routes notes sont protégées
-app.use('/api/notes', authMiddleware, noteRoutes);
+app.use('/api/notes', noteRoutes);
 
 // --- Route test protégée ---
 app.get('/api/protected', authMiddleware, (req, res) => {
